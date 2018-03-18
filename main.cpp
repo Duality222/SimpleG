@@ -5,8 +5,8 @@ using namespace std;
 
 void tactic (char answer [])
 {
+    int i = 0;
     DWORD dwcount;
-
     OFSTRUCT ofstruct;
     HANDLE logfile;
     HFILE hFile = OpenFile("1.log", &ofstruct, OF_READWRITE);
