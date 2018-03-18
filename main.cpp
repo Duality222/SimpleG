@@ -5,6 +5,7 @@ using namespace std;
 
 void tactic (char answer [])
 {
+    
     int i = 0;
     DWORD dwcount;
     OFSTRUCT ofstruct;
