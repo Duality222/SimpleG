@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1521411494 source:h:\c program\bot_roulet\main.cpp
+	<iostream>
+	<windows.h>
+
+1521405133 source:c:\users\neo\dropbox\bot_roulet\main.cpp
+	<iostream>
+	<windows.h>
+
