@@ -1,0 +1,11 @@
+#include <iostream>
+#include <windows.h>
+#include "load.h"
+
+using namespace std;
+
+int main()
+{
+    char answer[] = "a\r\n";
+    load_to_file(answer);
+}
