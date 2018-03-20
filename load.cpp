@@ -3,11 +3,9 @@
 
 using namespace std;
 
-int main()
+int load_to_file(char answer[])
 {
-    char answer[] = "a\r\n";
     DWORD dwcount;
-    OFSTRUCT ofstruct;
     HANDLE logfile;
 
     DWORD distr=OPEN_ALWAYS;
@@ -15,9 +13,11 @@ int main()
 
     if ( logfile != INVALID_HANDLE_VALUE)
     {
-        DWORD dwPtrLow = SetFilePointer( logfile, 0, NULL, FILE_END);
+        SetFilePointer( logfile, 0, NULL, FILE_END);
         WriteFile(logfile, answer, strlen(answer), &dwcount, NULL);
     }
-
+    else return 0;
+    
     CloseHandle(logfile);
+    return 1;
 }
