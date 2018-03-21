@@ -70,9 +70,9 @@ void screenshot(POINT a, POINT b)
 
     bool     Check_Start = false;
 
-    char red   = '1';
-    char black = '2';
-    char green = '0';
+    char red[]   = "1";
+    char black[] = "2";
+    char green[] = "0";
 
     HDC      hScreen = GetDC(NULL);
     HDC      hDC     = CreateCompatibleDC(hScreen);
@@ -92,15 +92,15 @@ void screenshot(POINT a, POINT b)
 
         if (RColor == Const_Dark)
         {
-            load_to_file(&black);
+            load_to_file(black);
         }
         if (RColor == Const_Green)
         {
-            load_to_file(&green);
+            load_to_file(green);
         }
         if (RColor == Const_Red)
         {
-            load_to_file(&red);
+            load_to_file(red);
         }
     }
 }
